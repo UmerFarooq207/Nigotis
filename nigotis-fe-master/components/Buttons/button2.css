@@ -1,0 +1,126 @@
+.btn2 {
+  padding: 6px 30px; /* Decreased padding to reduce button size */
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #003366,
+    #008080
+  ); /* Updated gradient */
+  cursor: pointer;
+}
+
+.btn2::before{
+  content: "";
+  position: absolute;
+  left: 1.5px;
+  right: 1.5px;
+  top: 2px;
+  bottom: 1px;
+  border-radius: 4px;
+  background-color: white;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.btn2::after  {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(to left, #003366, #008080); /* Updated gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+
+.btn2:hover::before {
+  opacity: 20%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.btn2:hover::after  {
+  color: white;
+}
+
+/* Media query for screens smaller than the `md` breakpoint */
+@media (max-width: 768px) {
+  .btn2 {
+    padding: 8px 20px; /* Decreased padding for smaller screens */
+    font-size: 14px; /* Optional: Adjust font size */
+    border-radius: 4px; /* Optional: Slightly smaller border-radius */
+  }
+
+  .btn2::after {
+    font-size: 14px; /* Adjust font size to match smaller button size */
+  }
+}
+
+
+
+.btn3 {
+  padding: 6px 30px; /* Decreased padding to reduce button size */
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #003366,
+    #008080
+  ); /* Updated gradient */
+  cursor: pointer;
+}
+
+.btn3::before{
+  content: "";
+  position: absolute;
+  left: 1.5px;
+  right: 1.5px;
+  top: 2px;
+  bottom: 1px;
+  border-radius: 4px;
+  /* background-color: white; */
+  z-index: -1;
+  transition: 200ms;
+}
+
+.btn3::after  {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(to left, #003366, #008080); /* Updated gradient */
+  -webkit-background-clip: text;
+  color: white;
+  transition: 200ms;
+  
+}
+
+.btn3:hover::before {
+  opacity: 20%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.btn3:hover::after  {
+  color: white;
+}
+
+/* Media query for screens smaller than the `md` breakpoint */
+@media (max-width: 768px) {
+  .btn3 {
+    padding: 8px 20px; /* Decreased padding for smaller screens */
+    font-size: 14px; /* Optional: Adjust font size */
+    border-radius: 4px; /* Optional: Slightly smaller border-radius */
+  }
+
+  .btn3::after {
+    font-size: 14px; /* Adjust font size to match smaller button size */
+  }
+}

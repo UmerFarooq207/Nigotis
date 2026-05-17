@@ -1,0 +1,154 @@
+.btn {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  background: linear-gradient(to right, #003366, #008080);
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  z-index: -1;
+  opacity: 10%;
+  transition: 200ms;
+}
+
+.btn::after {
+  content: attr(data);
+  font-size: 16px;
+  color: white;
+  transition: 200ms;
+}
+
+.btn:hover::before {
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  opacity: 1;
+}
+
+.btn:hover::after {
+  background: linear-gradient(to left, #003366, #008080);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.buttonvar2 {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  background: linear-gradient(to right, #003366, #008080);
+  cursor: pointer;
+}
+
+.buttonvar2::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+  background-color: white;
+  z-index: -1;
+  opacity: 10%;
+  transition: 200ms;
+}
+
+.buttonvar2::after {
+  content: attr(data);
+  font-size: 16px;
+  color: white;
+  transition: 200ms;
+}
+
+.buttonvar2:hover::before {
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  opacity: 1;
+}
+
+.buttonvar2:hover::after {
+  background: linear-gradient(to left, #003366, #008080);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footerbtn {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  background: linear-gradient(to right, #003366, #008080);
+  cursor: pointer;
+}
+
+.footerbtn::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: -1;
+  opacity: 10%;
+  transition: 200ms;
+}
+
+.footerbtn::after {
+  content: attr(data);
+  font-size: 16px;
+  color: white;
+  transition: 200ms;
+}
+
+.footerbtn:hover::before {
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  opacity: 1;
+}
+
+.footerbtn:hover::after {
+  background: linear-gradient(to left, #003366, #008080);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Media Query for Screens Smaller Than `md` */
+@media (max-width: 768px) {
+  .btn,
+  .buttonvar2,
+  .footerbtn {
+    padding: 10px 25px; /* Reduced padding */
+    font-size: 14px; /* Adjusted font size */
+    border-radius: 4px; /* Slightly smaller border-radius */
+  }
+
+  .btn::after,
+  .buttonvar2::after,
+  .footerbtn::after {
+    font-size: 14px; /* Adjust font size */
+  }
+}

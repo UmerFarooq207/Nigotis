@@ -1,0 +1,5 @@
+/* Legacy styles — HeroSection no longer uses custom-bottom or custom-padding.
+   Kept as an empty file to avoid breaking any accidental imports elsewhere. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

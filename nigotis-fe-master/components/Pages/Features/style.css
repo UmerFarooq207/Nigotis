@@ -1,0 +1,4 @@
+/* Legacy custom classes kept for backward compatibility — new HeroSection no longer relies on these */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
