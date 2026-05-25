@@ -172,7 +172,7 @@ export default function PricingSection({
                     {currency?.symbol}{isAnnual ? Number(plan?.pricePerMonth * 12).toFixed(2) : Number(plan?.pricePerMonth).toFixed(2)}
                   </span>
                   <span className="text-gray-500 text-sm font-medium">
-                    per {isAnnual ? "year" : "month"}/user
+                    per {isAnnual ? "year" : "month"}
                   </span>
                 </div>
                 
@@ -199,10 +199,6 @@ export default function PricingSection({
                 </button>
                 
                 <div className="h-px bg-gray-200 w-full mb-6"></div>
-                
-                <p className="font-medium text-sm text-gray-800 mb-4">
-                  {plan?.type === "pro" ? "Pro plan features, plus:" : "Free plan features, plus:"}
-                </p>
                 
                 <ul className="space-y-4 relative flex-1">
                   {plan.includes.map((item, i) => (
